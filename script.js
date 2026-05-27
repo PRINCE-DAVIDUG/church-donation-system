@@ -13,7 +13,7 @@ form.addEventListener('submit', async (e) => {
     message: document.getElementById('message').value
   };
 
-  const response = await fetch('https://church-donation-system-534a.onrender.com', {
+  const response = await fetch('http://localhost:5000/api/donations/donate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
